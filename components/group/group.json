@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_group_groups",
+  "info": {
+    "name": "group",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "players": {
+      "collection": "players"
+    }
+  }
+}
