@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "mains",
+  "info": {
+    "name": "main",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "group": {
+      "type": "component",
+      "repeatable": true,
+      "component": "group.group"
+    }
+  }
+}
