@@ -1,0 +1,177 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "name": "Players",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "flag": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "height": {
+      "type": "integer",
+      "min": 0,
+      "required": true
+    },
+    "weight": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "birthday": {
+      "type": "date",
+      "required": true
+    },
+    "from": {
+      "type": "string",
+      "required": true
+    },
+    "profile": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "video": {
+      "type": "string",
+      "required": true
+    },
+    "debut": {
+      "type": "date"
+    },
+    "previously": {
+      "type": "string",
+      "required": true
+    },
+    "stat_title_1": {
+      "type": "string",
+      "required": true
+    },
+    "stat_title_2": {
+      "type": "string",
+      "required": true
+    },
+    "stat_title_3": {
+      "type": "string",
+      "required": true
+    },
+    "stat_data_1": {
+      "type": "string",
+      "required": true
+    },
+    "stat_data_2": {
+      "type": "string",
+      "required": true
+    },
+    "stat_data_3": {
+      "type": "string",
+      "required": true
+    },
+    "bio": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "title_bio": {
+      "type": "string",
+      "required": true
+    },
+    "data_bio": {
+      "type": "text",
+      "required": true
+    },
+    "card": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "Goalkeeper",
+        "Defender",
+        "Midfielder",
+        "Forward"
+      ],
+      "required": true
+    },
+    "number": {
+      "type": "biginteger",
+      "min": "0",
+      "required": true
+    },
+    "card_title_1": {
+      "type": "string",
+      "required": true
+    },
+    "card_title_2": {
+      "type": "string",
+      "required": true
+    },
+    "card_title_3": {
+      "type": "string",
+      "required": true
+    },
+    "card_data_1": {
+      "type": "string",
+      "required": true
+    },
+    "card_data_2": {
+      "type": "string",
+      "required": true
+    },
+    "card_data_3": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
