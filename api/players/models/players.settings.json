@@ -76,7 +76,8 @@
       "required": true
     },
     "debut": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "previously": {
       "type": "string",
